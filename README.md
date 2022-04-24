@@ -10,6 +10,7 @@ implement onlineChat with webSocket
 ### Technologies:
 
 - BackEnd Side : 
+  - Use nodemon to restart the program automatically for changes 
   - Build a server using the Express Library
 
 ```
@@ -53,7 +54,7 @@ mySocket.on("connection", (socket) => {
   - Implementation of component structure using material-ui library
   - Library Css : makeStyles from material-ui/styles
  
-## Project setup
+## Clinet Project setup
 
 In the project directory, you can run:
 
@@ -63,14 +64,29 @@ npm install
 yarn install
 ```
 then :
-### Compiles and hot-reloads for development
+### Client Compiles and hot-reloads for development
 
 ```
 npm start
 # or
 yarn start
 ```
+## BackEnd hot-reloads automaticallyt :
+```
+npm install -g nodemon
+```
+Execute the Command for restart the program automatically  :
+```
+nodemon server.js
+```
+## BackEnd Project setup :
+
+```
+yarn dev
+or 
+npm run dev
+```
 ### About the application:
 
-The purpose of the web Quiz, design multi-step questions and save the answers to each question and display them in the result page.
+The purpose of the onlineChat , Online chat design using real time connection with socket.io
 
